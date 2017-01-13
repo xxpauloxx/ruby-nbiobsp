@@ -1,23 +1,22 @@
-# Módulo NBioBSP Ruby
+# NBioBSP Module for Ruby
 
-Módulo para utilização do leitor biométrico Nitgen Hamster III em Ruby. 
-Faça a instalação do driver que está no diretório driver(64 bits, mas existe 
-32 bits na Internet também).
+Digital fingerprint reader module for Ruby using Nitgen device.
+Install the driver that is the "driver" directory.
 
 ```console
-git clone https://github.com/izepa/ruby-nbiobsp-module.git
-cd ruby-nbiobsp-module 
-ruby extconf.rb 
+git clone https://github.com/paulopinda/ruby-nbiobsp.git
+cd ruby-nbiobsp-module
+ruby extconf.rb
 ```
 
-Edite o arquivo Makefile na linha "ldflags" e acrescente a seguinte flag "-lNBioBSP" faça o seguinte comando:
+Edit Makefile in line "ldflags" and add flag "-lNBioBSP".
 
 ```console
 make
 ruby test.rb
 ```
 
-#### Código para testar o módulo.
+#### Simple code
 
 ```ruby
 require './nbiobsp'
@@ -40,3 +39,7 @@ end
 
 nbio.close
 ```
+
+#### Any problem? Report me, please.
+### Paulo Roberto
+paulo.pinda@gmail.com
