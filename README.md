@@ -5,7 +5,7 @@ Install the driver that is the "driver" directory.
 
 ```console
 git clone https://github.com/paulopinda/ruby-nbiobsp.git
-cd ruby-nbiobsp-module
+cd ruby-nbiobsp
 ruby extconf.rb
 ```
 

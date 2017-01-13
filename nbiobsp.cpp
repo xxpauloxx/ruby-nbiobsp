@@ -5,9 +5,8 @@
 using namespace Rice;
 using namespace std;
 
-extern "C"
-void Init_nbiobsp()
-{
+extern "C" 
+void Init_nbiobsp(){
   Class rb_c = define_class("NBioBSP")
     .define_method("init", &nbiobspInit)
     .define_method("capture", &nbiobspCapture)
