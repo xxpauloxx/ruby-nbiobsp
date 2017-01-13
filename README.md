@@ -24,17 +24,17 @@ require './nbiobsp'
 nbio = NBioBSP.new
 nbio.init
 
-puts "Insira a primeira digital: "
+puts "Insert the first fingerprint: "
 fir1 = nbio.capture 4000
 
-puts "Insira a segunda digital: "
+puts "Insert the second fingerprint: "
 fir2 = nbio.capture 4000
 
 is_same = nbio.match(fir1, fir2)
 if is_same == true
-	puts "Digitais correspondem!"
+	puts "OK!"
 else
-	puts "Digitais não correspondem."
+	puts "NOK!"
 end
 
 nbio.close
