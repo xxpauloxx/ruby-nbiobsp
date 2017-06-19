@@ -40,6 +40,3 @@ end
 nbio.close
 ```
 
-#### Any problem? Report me, please.
-### Paulo Roberto
-paulo.pinda@gmail.com
